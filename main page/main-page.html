@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="main-page-css/header.css">
+</head>
+
+<body>
+
+    <!-- Header with menu and sign-in buttons -->
+    <header class="header">
+        <div class="header-top">
+            <button class="menu-btn">☰</button>
+            <div class="signin">
+                <button class="signin-btn">SIGN IN</button>
+            </div>
+        </div>
+
+        <!-- Hero image banner-->
+        <div class="hero-banner"></div>
+
+        <!-- Main navigation -->
+        <nav class="main-nav" id="main-nav">
+            <!-- Main navigation links will be dynamically inserted here -->
+        </nav>
+
+    <!-- Main content area -->
+    <main class="content">
+        <section class="codex-section">
+            <h1 class="section-title">THE CODEX</h1>
+             <div class="codex-grid" id="codex-grid">
+                 <!-- Codex items will be dynamically populated here -->
+             </div>
+            <!-- Codex grid -->
+             <div class="codex-grid" id="codex-grid"></div>
+        </section>
+
+        <!-- Recent Articles section -->
+        <section class="recent-articles">
+            <h2 class="section-title">RECENT ARTICLES</h2>
+            
+                    <div class="article-wrapper" id="article-wrapper">
+                        <!-- Articles will be dynamically inserted here -->
+                        <p class="placeholder">No articles available.</p>
+                    </div>
+                <button class="carousel-btn prev">❮</button>
+                    <div class="article-wrapper" id="article-wrapper"></div>
+                <button class="carousel-btn next">❯</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Fantasy Universe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main-page-script.js"></script>
+</body>
+</html>
