@@ -66,7 +66,7 @@ const data = {
             title: "TECHNOLOGY",
             img: "images/technology.png",
             href: "",
-            description: "Tools, inventions, and advancements that shape everyday life and warfare",
+            description: "Tools, inventions, and advancements that shape everyday life and warfare.",
         },
         { id: "history",
             title: "HISTORY",
@@ -78,7 +78,7 @@ const data = {
             title: "CULTURES",
             img: "images/cultures.png",
             href: "",
-            description: "An overview of cultural identities, festical, symbols, and shared traditions.",
+            description: "An overview of cultural identities, festival, symbols, and shared traditions.",
         },
     ],
 
@@ -119,6 +119,7 @@ function renderCodex() {
     card.innerHTML = `
       <img src="${item.img}" alt="${item.alt}">
       <h2>${item.title}</h2>
+      <p>${item.description}</p>
     `;
 
     codexGrid.appendChild(card);
