@@ -1,0 +1,74 @@
+:root {
+    --nav-color: #3D3431;
+    --nav-hover-color: #a78680;
+    --main-text-color: #B5A49F;
+    --title-color: #E5D6CD;
+    --title-color-second: #E4E3E3;
+    --title-color-third: #E5D6CD;
+    --text-color: #E5DAD4; 
+    --container-color: #665B58; 
+    --container-color-second: #BAAA9E;
+    --container-color-third: #A79C93; 
+    --button-color: #2e2623; 
+}
+
+.content {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.codex-section {
+    margin-bottom: 80px; 
+    background-color: var(--container-color);
+    padding: 40px 180px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--title-color);
+    font-size: 38px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    position: relative; 
+}
+
+.section-title::after
+.section-title::before {
+}
+
+.section-title::before {
+    left: 0,
+}
+
+.section-title::after {
+    right: 0;
+}
+
+.codex-grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.codex-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    aspect-ratio: 14 / 12;
+    transition: all 0.3s ease;
+    min-height: 250px;
+    box-shadow: 8px 6px 9px 0 rgba(0, 0, 0, 0.18);
+}
+
+.codex-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    opacity: 0.6;
+}

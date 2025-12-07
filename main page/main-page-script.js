@@ -9,7 +9,7 @@ const data = {
     codex: [
         { id: "characters",
             title: "CHARACTERS",
-            img: "images/characters.png",
+            img: "images/character.png",
             alt: "Image representing characters",
             href: "",
             description: "Biographies of major and minor characters inhabiting this fantasy universe.",
