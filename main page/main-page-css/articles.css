@@ -11,3 +11,35 @@
     --container-color-third: #A79C93; 
     --button-color: #2e2623; 
 }
+
+.recent-articles {
+    margin-top: 150px;
+    padding-top: 40px;       
+}
+
+.article-carousel {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.carousel-btn:first-of-type {
+    left: 0;
+}
+
+.carousel-btn:last-of-type {
+    right: 0;
+}
+

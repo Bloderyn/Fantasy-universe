@@ -85,12 +85,35 @@ const data = {
     articles: [
         {
             title: "The Trees of Souls",
-            img: "images/article-trees-of-souls.png",
+            img: "Images/article-tree-of-souls.png",
             excerpt: "Elva’lanor historians tell that the Trees of Souls were once living elves who offered their final breath to protect their kin against the Void. On quiet nights, when the moonlight settles on the groves, their treesshimmer with a soft silver or golden glow, as if the ancestors are still watching. Travelers say you can feel their presence in the air, a hush,a pulse, a memory, guiding those who walk beneath their branches ",
             href: "#", 
         },
-    ]
-}
+    ],
+
+    footer: {
+      about: {
+        title: "About", 
+        links: [
+          { label: "About the universe", href: "#" },
+          { label: "About the creator", href: "#" },
+          { label: "Contact", href: "#" },
+          { label: "Updates", href: "#" },
+          { label: "Support", href: "#" }
+        ],
+      },
+      resources: {
+        title: "Resources",
+        links: [
+          { label: "Terms", href: "#" },
+          { label: "Privacy", href: "#" },
+        ],
+      },
+      copy: "© 2025 Fantasy Universe. All rights reserved.",
+    },
+};
+
+
 
 // Function to render navigation bar dynamically
 function renderNav() {
@@ -136,7 +159,7 @@ function renderArticles() {
     articleEl.className = "article-card";
 
     articleEl.innerHTML = `
-      <img src="${article.image}" alt="${article.title}">
+      <img src="${article.img}" alt="${article.title}">
       <div class="article-content">
         <h3>${article.title}</h3>
         <p>${article.excerpt}</p>
@@ -148,12 +171,44 @@ function renderArticles() {
   });
 }
 
-// Quand le DOM est prêt, on génère tout
+
+// Function to render Footer dynamically
+function renderFooter() {
+  const aboutEl = document.getElementById("footer-about");
+  const resourcesEl = document.getElementById("footer-resources");
+  const copyEl = document.getElementById("footer-copy");
+
+  //About section 
+  aboutEl.innerHTML = `
+    <h4>${data.footer.about.title}</h4>
+    <ul>
+      ${data.footer.about.links
+      .map(link => `<li><a href="${link.href}">${link.label}</a></li>`)
+      .join("")}
+    </ul>
+  `;
+
+  //Resources section
+  resourcesEl.innerHTML = `
+    <h4>${data.footer.resources.title}</h4>
+    <ul>
+      ${data.footer.resources.links
+      .map(link => `<li><a href="${link.href}">${link.label}</a></li>`)
+      .join("")}
+    </ul>
+  `;
+
+  // Copyright section
+  copyEl.innerHTML = `<p>${data.footer.copy}</p>`;
+}
+
+
+// DOM ready event to initialize rendering
 document.addEventListener("DOMContentLoaded", () => {
   renderNav();
   renderCodex();
   renderArticles();
   renderFooter();
 
-  console.log("Page générée depuis data ✅");
+  console.log("Page content rendered successfully.");
 });

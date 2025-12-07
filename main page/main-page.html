@@ -56,13 +56,12 @@
         <section class="recent-articles">
             <h2 class="section-title">RECENT ARTICLES</h2>
             
-                    <div class="article-wrapper" id="article-wrapper">
+                    <div class="article-carousel" id="article-wrapper">
                         <!-- Articles will be dynamically inserted here -->
                         <p class="placeholder">No articles available.</p>
                     </div>
-                <button class="carousel-btn prev">❮</button>
-                    <div class="article-wrapper" id="article-wrapper"></div>
-                <button class="carousel-btn next">❯</button>
+                <button class="carousel-btn prev"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 8 8 12 12 16"></polyline><line x1="16" y1="12" x2="8" y2="12"></line></svg></button>
+                <button class="carousel-btn next"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="200px" width="200px" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></button>
             </div>
         </section>
     </main>
@@ -70,23 +69,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>About</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                </ul>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2025 Fantasy Universe. All rights reserved.</p>
-            </div>
+            <div class="footer-section" id="footer-about"></div>
+            <!-- About section will be dynamically inserted here -->
+            <div class="footer-section" id="footer-resources"></div>
+            <!-- Resources section will be dynamically inserted here -->
+            <div class="footer-copyright" id="footer-copy"></div>
+            <!-- Copyright information will be dynamically inserted here -->
         </div>
     </footer>
 
