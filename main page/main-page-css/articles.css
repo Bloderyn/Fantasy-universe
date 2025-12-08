@@ -14,7 +14,8 @@
 
 .recent-articles {
     margin-top: 150px;
-    padding-top: 40px;       
+    padding: 40px 0 80px 0;
+    background-color: var(--container-color);      
 }
 
 .article-carousel {
@@ -23,6 +24,8 @@
     justify-content: center;
     gap: 30px;
     position: relative;
+    background-color: rgba(184, 167, 158, 0.2);
+    padding: 20px 0;
 }
 
 .carousel-btn {
@@ -33,6 +36,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    transform: translateY(-320%);
 }
 
 .carousel-btn:first-of-type {
@@ -43,3 +47,19 @@
     right: 0;
 }
 
+.article-card {
+    display: flex; 
+    gap: 30px;
+    background-color: rgba(184, 167, 158, 0.4);
+    max-width: 1800px;
+    width: 1350px;
+    border-radius: 40px;
+}
+
+.article-card img {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 40px;
+}
