@@ -86,7 +86,7 @@ const data = {
         {
             title: "The Trees of Souls",
             img: "main-page/Images/article-tree-of-souls.png",
-            excerpt: "Elva’lanor historians tell that the Trees of Souls were once living elves who offered their final breath to protect their kin against the Void. On quiet nights, when the moonlight settles on the groves, their treesshimmer with a soft silver or golden glow, as if the ancestors are still watching. Travelers say you can feel their presence in the air, a hush,a pulse, a memory, guiding those who walk beneath their branches ",
+            excerpt: "Elva’lanor historians tell that the Trees of Souls were once living elves who offered their final breath to protect their kin against the Void. On quiet nights, when the moonlight settles on the groves, their trees shimmer with a soft silver or golden glow, as if the ancestors are still watching. Travelers say you can feel their presence in the air, a hush,a pulse, a memory, guiding those who walk beneath their branches ",
             href: "#", 
         },
     ],
@@ -159,11 +159,13 @@ function renderArticles() {
     articleEl.className = "article-card";
 
     articleEl.innerHTML = `
+      <div class="article-image">
       <img src="${article.img}" alt="${article.title}">
+      </div>
       <div class="article-content">
         <h3>${article.title}</h3>
         <p>${article.excerpt}</p>
-        <a href="${article.href}" class="read-more">Read Article →</a>
+        <a href="${article.href}" class="read-more">Read Article</a>
       </div>
     `;
 
