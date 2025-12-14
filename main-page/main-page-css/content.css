@@ -12,6 +12,11 @@
     --button-color: #2e2623; 
 }
 
+body {
+    background: url('../../main-page/Images/background.png') no-repeat center center;
+    background-size: cover;
+}
+
 .content {
     max-width: 2000px;
     margin: 0 auto;
@@ -20,7 +25,7 @@
 
 .codex-section {
     margin-bottom: 80px; 
-    background-color: var(--container-color);
+    background-color: rgba(61, 54, 49, 0.527);
     padding: 40px 180px;
 }
 

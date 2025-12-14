@@ -101,9 +101,9 @@ body {
     margin-top: 650px;
     display: flex;
     justify-content: center;
-    background-color: rgba(61, 52, 49, 1);
-    border-top: 6px solid rgba(61, 52, 49, 1);
-    border-bottom: 6px solid rgba(61, 52, 49, 1);
+    background-color: rgba(78, 67, 62);
+    border-top: 6px solid rgba(78, 67, 62);
+    border-bottom: 6px solid rgba(78, 67, 62);
 }
 
 .nav-item {
@@ -126,7 +126,7 @@ body {
 
 .nav-item:hover {
     color: rgba(48, 44, 42, 0.8);
-    background-color: rgba(107, 92, 88, 0.8);
+    background-color: rgba(138, 119, 113, 0.8);
 }
 
 
