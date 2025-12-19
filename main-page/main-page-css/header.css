@@ -82,7 +82,9 @@ body {
 /* Banner styles */ 
 .hero-banner {
     width: 100%;
-    height: 780px;
+    height: 50vw;
+    max-height: 780px;
+    min-height: 300px;
     position: absolute;
     top: 0;
     overflow: hidden;
@@ -97,7 +99,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
 /* Main navigation styles */
 .main-nav {
     position: relative; 
@@ -202,26 +203,10 @@ body {
     .menu-btn:hover {
         color: var(--nav-hover-color);
     }
-
-    .hero-banner {
-        height: 400px;
-    }
-
     /* Hide the horizontal navigation bar completely */
-    .main-nav {
-        margin-top: 0;
-        position: fixed;
-        top: 90px;
-        left: 0;
-        width: 100%;
-        height: 0;
-        flex-direction: column;
-        background-color: rgba(78, 67, 62, 0.98);
-        border: none;
-        overflow: hidden;
-        transition: height 0.3s ease;
-        z-index: 1000;
-    }
+  .hero-banner {
+    height: 400px;
+  }
 
     .main-nav.active {
         height: auto;
