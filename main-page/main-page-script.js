@@ -93,7 +93,7 @@ const data = {
 
     footer: {
       about: {
-        title: "About", 
+        title: "ABOUT", 
         links: [
           { label: "About the universe", href: "#" },
           { label: "About the creator", href: "#" },
@@ -103,7 +103,7 @@ const data = {
         ],
       },
       resources: {
-        title: "Resources",
+        title: "RESOURCES",
         links: [
           { label: "Terms", href: "#" },
           { label: "Privacy", href: "#" },

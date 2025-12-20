@@ -45,7 +45,7 @@
 }
 
 .carousel-btn svg {
-    stroke: rgba(80, 72, 69, 0.89);
+    stroke: rgba(82, 71, 68, 0.89);
     stroke-width: 1;
     cursor: pointer;
     width: 4rem;
@@ -114,10 +114,11 @@
 }
 
 .article-content p {
-    color: rgba(209, 199, 192, 0.959);
+    color: rgba(202, 188, 177, 0.959);
     font-size: clamp(1rem, 2vw, 1.2rem);
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin: 20px 0;
+    font-family: "Oldenburg", serif;
 }
 
 .read-more {
@@ -129,8 +130,8 @@
     width: fit-content;
     align-self: center;
     border-radius: 30px;
-    font-size: clamp(1.2rem, 3vw, 2rem);
-    font-family: "Yesteryear", cursive;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    font-family: "Playwrite AU QLD", cursive;
     outline: 0.18rem solid rgba(65, 59, 56, 0.74);
     outline-offset: 4px;
     transition:
