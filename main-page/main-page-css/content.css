@@ -20,7 +20,7 @@ body {
 .content {
     max-width: 2000px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 0 20px;
 }
 
 .codex-section {
@@ -110,6 +110,7 @@ body {
     width: 90%;
     color: rgba(233, 226, 221, 0.8);
     text-shadow: 2px 4px 6px rgba(19, 18, 18, 0.7);
+    font-family: "Oldenburg", serif;
 }
 
 .codex-card:hover p {

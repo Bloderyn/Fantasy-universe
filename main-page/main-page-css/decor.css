@@ -1,0 +1,32 @@
+/* Divider styles between nav and content */
+.divider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-45%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.divider img {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.divider-footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translateY(55%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.divider-footer img {
+    width: 80%;
+    max-width: 1400px;
+    height: auto;
+    opacity: 0.8;
+}

@@ -13,7 +13,7 @@
 }
 
 .recent-articles {
-    margin-top: 150px;
+    margin: 150px 0 10px 0;
     padding: 40px 0 80px 0;
     background-color: rgba(116, 101, 94, 0.54);
     position: relative;      
@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     z-index: 5;
 
