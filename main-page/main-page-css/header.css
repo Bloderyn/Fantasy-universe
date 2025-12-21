@@ -111,6 +111,11 @@ body {
     border-bottom: 6px solid rgba(78, 67, 62);
 }
 
+#nav-links {
+    display: flex;
+    width: 100%;
+}
+
 .nav-item {
     text-align: center;
     padding: 15px 5%;
@@ -138,13 +143,17 @@ body {
     background-color: rgba(138, 119, 113, 0.8);
 }
 
+.menu-btn {
+    display: none;
+}
+
 @media (max-width: 1400px) {
     .hero-banner {
         height: 650px;
     }
     
     .main-nav {
-        margin-top: 550px;
+        margin-top: 650px;
     }
 }
 
@@ -154,7 +163,7 @@ body {
     }
     
     .main-nav {
-        margin-top: 500px;
+        margin-top: 600px;
     }
 }
 
@@ -164,7 +173,7 @@ body {
     }
     
     .main-nav {
-        margin-top: 450px;
+        margin-top: 550px;
     }
 }
 
@@ -174,7 +183,7 @@ body {
     }
     
     .main-nav {
-        margin-top: 400px;
+        margin-top: 500px;
     }
     
     .nav-item {
@@ -184,63 +193,41 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header-top {
-        justify-content: space-between;
-        padding: 30px 40px;
-    }
-    
-    .menu-btn {
-        display: block;
-        background: none;
-        border: none;
-        color: var(--main-text-color);
-        font-size: 30px;
-        cursor: pointer;
-        padding: 5px 10px;
-        z-index: 11;
-    }
-    
-    .menu-btn:hover {
-        color: var(--nav-hover-color);
-    }
-    /* Hide the horizontal navigation bar completely */
-  .hero-banner {
-    height: 400px;
+
+  .main-nav {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 400px;         
   }
 
-    .main-nav.active {
-        height: auto;
-        border-top: 3px solid rgba(204, 185, 175, 0.3);
-    }
+ #nav-links {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
 
-    .nav-item {
-        padding: 20px;
-        font-size: 1.4rem;
-        border-right: none;
-        border-bottom: 2px solid rgba(204, 185, 175, 0.11);
-        white-space: normal;
-        text-overflow: clip;
-        flex: none;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
+  .main-nav.active #nav-links {
+    max-height: 500px;
+  }
 
-    .main-nav.active .nav-item {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .nav-item:last-child {
-        border-bottom: none;
-    }
-    
-    .signin-btn {
-        font-size: 1rem;
-        padding: 10px 16px;
-    }
+  .menu-btn {
+    display: block;
+    align-self: flex-start;
+    cursor: pointer;
+  }
 }
 
+@media (max-width: 768px) {
+    .menu-btn {
+        font-size: 24px;
+    }
+
+    .main-nav {
+        margin-top: 340px;
+    }
+}
 @media (max-width: 480px) {
     .header-top {
         padding: 20px 30px;
@@ -255,7 +242,7 @@ body {
     }
     
     .main-nav {
-        top: 80px;
+        margin-top: 160px;
     }
     
     .nav-item {

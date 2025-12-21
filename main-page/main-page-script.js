@@ -117,15 +117,17 @@ const data = {
 
 // Function to render navigation bar dynamically
 function renderNav() {
-  const navEl = document.getElementById("main-nav");
-  navEl.innerHTML = "";
+  const linksEl = document.getElementById("nav-links");
+  if (!linksEl) return;
+
+  linksEl.innerHTML = "";
 
   data.nav.forEach((item) => {
     const link = document.createElement("a");
     link.href = item.href;
     link.textContent = item.label;
     link.className = "nav-item";
-    navEl.appendChild(link);
+    linksEl.appendChild(link);
   });
 }
 

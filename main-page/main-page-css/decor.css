@@ -60,4 +60,58 @@
 .corner-bottom-right {
     bottom: -190px;
     right: -40px;
-}7
+}
+
+@media (max-width: 768px) {
+    .corner-decoration {
+        width: 300px;
+        height: 300px;
+    }
+
+    .corner-top-left {
+        top: -65px;
+    }
+
+    .corner-top-right {
+        top: -65px;
+    }
+
+    .corner-bottom-left {
+        bottom: -95px;
+        left: -20px;
+    }
+
+    .corner-bottom-right {
+        bottom: -95px;
+        right: -20px;
+    }
+
+    .divider {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+.corner-decoration {
+    width: 200px;
+    height: 200px;
+}
+
+.corner-top-left {
+    top: -45px;
+}
+
+.corner-top-right {
+    top: -45px;
+}
+
+.corner-bottom-left {
+    bottom: -65px;
+    left: -15px;
+}
+
+.corner-bottom-right {
+    bottom: -65px;
+    right: -15px;
+}
+}
